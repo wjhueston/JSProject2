@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+    <title>Care for a game?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container w-75">
+    <span id="rulesTooltip"><div id="ruleshero"></div><span id="rulesPopup">Curious about how to play? It's just like Rock-Paper-Scissors, with some extra ways to play.<br><br>
+        1. Scissors cuts Paper<br>
+        2. Paper covers Rock<br>
+        3. Rock crushes Lizard<br>
+        4. Lizard poisons Spock<br>
+        5. Spock smashes Scissors<br>
+        6. Scissors decapitates Lizard<br>
+        7. Lizard eats Paper<br>
+        8. Paper disproves Spock<br>
+        9. Spock vaporizes Rock<br>
+        10. Rock crushes Scissors</span></span>
+    <h2 id="sheldon">Sheldon Plays:</h2>
+    <div id="computerChoice">
+        <img src="img/Scissors.png" alt="Scissors" id="compScissors"/>
+        <img src="img/Paper.png" alt="Paper" id="compPaper"/>
+        <img src="img/Rock.png" alt="Rock" id="compRock"/>
+        <img src="img/Lizard.png" alt="Lizard" id="compLizard"/>
+        <img src="img/Spock.png" alt="Spock" id="compSpock"/>
+    </div>
+    <br>
+    <h1 id="roundOutcome"><br><br></h1>
+    <br>
+    <form id="playerChoice">
+        <label>
+            <input name="playerChoice" type="radio" value="Scissors">
+            <img src="img/Scissors.png" alt="Scissors"  id="playerScissors"/>
+        </label>
+        <label>
+            <input name="playerChoice" type="radio" value="Paper">
+            <img src="img/Paper.png" alt="Paper" id="playerPaper"/>
+        </label>
+        <label>
+            <input name="playerChoice" type="radio" value="Rock">
+            <img src="img/Rock.png" alt="Rock" id="playerRock"/>
+        </label>
+        <label>
+            <input name="playerChoice" type="radio" value="Lizard">
+            <img src="img/Lizard.png" alt="Lizard" id="playerLizard"/>
+        </label>
+        <label>
+            <input name="playerChoice" type="radio" value="Spock">
+            <img src="img/Spock.png" alt="Spock" id="playerSpock"/>
+        </label>
+    </form>
+    <table>
+        <tr>
+            <th>Player</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Sheldon</td>
+            <td id="sheldonScore"></td>
+        </tr>
+        <tr>
+            <td>Player</td>
+            <td id="playerScore"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="code.js"></script>
+
+</html>

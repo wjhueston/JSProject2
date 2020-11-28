@@ -1,0 +1,86 @@
+body {
+    width: auto;
+    align-content: center;
+}
+#rulesTooltip {
+    position: relative;
+    display: inline;
+}
+#rulesTooltip #rulesPopup {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 5px 5px;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: fixed;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+#rulesTooltip:hover #rulesPopup {
+    visibility: visible;
+}
+#ruleshero{height: 300px; width: 300px; background-image: url("img/The Rules.png") ; background-size: 100%    100%;
+    margin-right: auto;
+    margin-left: auto;}
+#computerChoice{width: 150px; height: 200px; margin-left: auto; margin-right: auto;}
+#compScissors{height: 150px; position: absolute; display: none;}
+#compPaper{height: 150px;position: absolute; display: none;}
+#compRock{height: 150px;position: absolute; display: none;}
+#compLizard{height: 150px;position: absolute; display: none;}
+#compSpock{height: 150px;position: absolute; display: none;}
+#playerChoice{margin-left: auto; margin-right: auto; width: fit-content;}
+#playerScissors{height: 150px;}
+#playerScissors:hover{
+    height:170px; width: 170px;
+}
+#playerPaper{height: 150px;}
+#playerPaper:hover{
+    height:170px; width: 170px;
+}
+#playerRock{height: 150px;}
+#playerRock:hover{
+    height:170px; width: 170px;
+}
+#playerSpock{height: 150px;}
+#playerSpock:hover{
+    height:170px; width: 170px;
+}
+#playerLizard{height: 150px;}
+#playerLizard:hover{
+    height:170px; width: 170px;
+}
+h2#sheldon{
+    margin-left: 40%; margin-right: 40%; display: none;
+}
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#roundOutcome{
+    text-align: center;
+}
+#sheldonScore{
+    text-align: right;
+}
+#playerScore{
+    text-align: right;
+}
