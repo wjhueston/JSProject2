@@ -1,6 +1,7 @@
 $(document).ready(
     function ()
     {
+        //This first bit before my event listener is so that the rules popup will follow your mouse as your move it.
         var rulestooltip = document.getElementById('rulesPopup');
 
         window.onmousemove = function (e) {
@@ -11,7 +12,7 @@ $(document).ready(
         };
         //Events
         $("input[name='playerChoice']").change(response)
-
+        //Any time the user clicks one of the five symbols, it detects the change and runs the function below.
         //Functions
         var playerScore = 0
         var sheldonScore = 0
@@ -19,10 +20,11 @@ $(document).ready(
             event.preventDefault()
             var selectedImage = $("input[name='playerChoice']:checked");
             var selectedSymbol = selectedImage.val();
+            //Gets the value of the image clicked by the user
             var computerChoice = Math.floor(Math.random() * 5);
             var computerSymbol;
             $("#sheldon").show();
-
+            //Shows Sheldon (the computer)'s symbol
             switch(computerChoice){
                 case 0:
                     computerSymbol = "Rock"
@@ -66,9 +68,11 @@ $(document).ready(
                     break;
             }
             var playerwin
+            //Quick check to see if both of the symbols are the same
             if(computerSymbol === selectedSymbol){
                 $("#roundOutcome").text("Tie.")
             }
+            //Massive switch statement with nested switch statement for each outcome.
             switch(computerSymbol){
                 case "Rock":
                     switch(selectedSymbol){
@@ -178,6 +182,7 @@ $(document).ready(
                     break;
             }
             $("input:radio").prop('checked', false)
+            //During the course of the switch statement, determines if the player has won the round, and assigns score accordingly
             if(playerwin){
                 playerScore+=1
             }
@@ -187,6 +192,7 @@ $(document).ready(
 
             $("#playerScore").text(playerScore)
             $("#sheldonScore").text(sheldonScore)
+            //Checks to see if either player has won, and displays an appropriate message, then resets the score to 0-0
             if(sheldonScore === 2){
                 $("#roundOutcome").text("Sheldon wins! Better luck next time.")
                 sheldonScore=0

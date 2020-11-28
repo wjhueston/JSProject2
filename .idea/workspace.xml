@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a88e17c1-505e-471d-aafc-f4d39524cf00" name="Default Changelist" comment="" />
+    <list default="true" id="a88e17c1-505e-471d-aafc-f4d39524cf00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/code.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ksmQUFDG7kfOtGQEUxOFVImNHp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606497656833</updated>
-      <workItem from="1606497657867" duration="22864000" />
+      <workItem from="1606497657867" duration="23622000" />
     </task>
     <servers />
   </component>
@@ -44,6 +51,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="830" y="417" key="Github.ShareDialog" timestamp="1606528084862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606528084862" />
+    <state x="752" y="225" key="Github.UntrackedFilesDialog" timestamp="1606528090356">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606528090356" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606528099846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606528099846" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1606504879507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
